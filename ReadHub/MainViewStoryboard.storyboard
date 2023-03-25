@@ -40,15 +40,6 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Log out"/>
                             </button>
                         </barButtonItem>
-                        <button key="titleView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="ZJc-VN-M38">
-                            <rect key="frame" x="148.66666666666666" y="5" width="96" height="34.333333333333336"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="Following"/>
-                            <connections>
-                                <segue destination="r5E-10-zB2" kind="presentation" modalPresentationStyle="fullScreen" id="MlK-LO-gJI"/>
-                            </connections>
-                        </button>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="EjB-We-Qg7">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="sa9-OT-Bqe">
                                 <rect key="frame" x="290" y="5" width="87" height="34.333333333333336"/>
