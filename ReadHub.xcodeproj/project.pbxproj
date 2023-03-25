@@ -18,6 +18,7 @@
 		D3C2366129CBBB3200AE6AA2 /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3C2366029CBBB3200AE6AA2 /* Signup.storyboard */; };
 		D3E09CC529CF3F780097B04A /* MainViewStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3E09CC429CF3F780097B04A /* MainViewStoryboard.storyboard */; };
 		D3E09CC729CF449B0097B04A /* Post.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3E09CC629CF449B0097B04A /* Post.storyboard */; };
+		F9D16F6929CF853F0005770C /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D16F6829CF853F0005770C /* PostViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		D3C2366029CBBB3200AE6AA2 /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
 		D3E09CC429CF3F780097B04A /* MainViewStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainViewStoryboard.storyboard; sourceTree = "<group>"; };
 		D3E09CC629CF449B0097B04A /* Post.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Post.storyboard; sourceTree = "<group>"; };
+		F9D16F6829CF853F0005770C /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				D3E09CC629CF449B0097B04A /* Post.storyboard */,
 				287EFBCA29CF712C0006989A /* Following.storyboard */,
 				287EFBCC29CF7B230006989A /* FollowingViewController.swift */,
+				F9D16F6829CF853F0005770C /* PostViewController.swift */,
 			);
 			path = ReadHub;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 				D3C2364B29CBB30600AE6AA2 /* ViewController.swift in Sources */,
 				D3C2364729CBB30600AE6AA2 /* AppDelegate.swift in Sources */,
 				D3C2364929CBB30600AE6AA2 /* SceneDelegate.swift in Sources */,
+				F9D16F6929CF853F0005770C /* PostViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
