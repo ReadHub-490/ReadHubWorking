@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		287EFBCB29CF712C0006989A /* Following.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 287EFBCA29CF712C0006989A /* Following.storyboard */; };
 		287EFBCD29CF7B230006989A /* FollowingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287EFBCC29CF7B230006989A /* FollowingViewController.swift */; };
+		D3A3EFEC29D254FA00BD2026 /* FollowingList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3A3EFEB29D254FA00BD2026 /* FollowingList.storyboard */; };
 		D3C2364729CBB30600AE6AA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C2364629CBB30600AE6AA2 /* AppDelegate.swift */; };
 		D3C2364929CBB30600AE6AA2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C2364829CBB30600AE6AA2 /* SceneDelegate.swift */; };
 		D3C2364B29CBB30600AE6AA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C2364A29CBB30600AE6AA2 /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		287EFBCA29CF712C0006989A /* Following.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Following.storyboard; sourceTree = "<group>"; };
 		287EFBCC29CF7B230006989A /* FollowingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingViewController.swift; sourceTree = "<group>"; };
+		D3A3EFEB29D254FA00BD2026 /* FollowingList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FollowingList.storyboard; sourceTree = "<group>"; };
 		D3C2364329CBB30600AE6AA2 /* ReadHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3C2364629CBB30600AE6AA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3C2364829CBB30600AE6AA2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				287EFBCA29CF712C0006989A /* Following.storyboard */,
 				287EFBCC29CF7B230006989A /* FollowingViewController.swift */,
 				F9D16F6829CF853F0005770C /* PostViewController.swift */,
+				D3A3EFEB29D254FA00BD2026 /* FollowingList.storyboard */,
 			);
 			path = ReadHub;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				D3C2365329CBB30700AE6AA2 /* LaunchScreen.storyboard in Resources */,
 				D3C2365029CBB30700AE6AA2 /* Assets.xcassets in Resources */,
 				D3C2366129CBBB3200AE6AA2 /* Signup.storyboard in Resources */,
+				D3A3EFEC29D254FA00BD2026 /* FollowingList.storyboard in Resources */,
 				D3E09CC729CF449B0097B04A /* Post.storyboard in Resources */,
 				287EFBCB29CF712C0006989A /* Following.storyboard in Resources */,
 				D3C2364E29CBB30600AE6AA2 /* Main.storyboard in Resources */,
