@@ -22,6 +22,7 @@ struct User: ParseUser {
     var emailVerified: Bool?
     var password: String?
     var authData: [String: [String: String]?]?
+    var following: [String]?
 
     // Your custom properties.
     // var customKey: String?

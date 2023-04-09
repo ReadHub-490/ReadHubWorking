@@ -37,6 +37,7 @@ class PostViewController: UIViewController {
         
         var post = Post()
         
+        post.userObjId = User.current?.objectId
         post.title = bookName.text
         post.pages = pagesRead.text
         post.user = User.current
@@ -53,23 +54,22 @@ class PostViewController: UIViewController {
 
                     // TODO: Pt 2 - Update user's last posted date
                     // Get the current user
-                    if let currentUser = User.current {
-
-                        // Save updates to the user (async)
-                        currentUser.save { [weak self] result in
-                            switch result {
-                            case .success(let user):
-                                print("✅ User Saved! \(user)")
-
-                                // Switch to the main thread for any UI update
-
-                            case .failure(let error):
-                                self?.showAlert(description: error.localizedDescription)
-                            }
-                        }
-                    }
-                    
-                
+//                    if let currentUser = User.current?.username {
+//
+//                        // Save updates to the user (async)
+//                        currentUser.save { [weak self] result in
+//                            switch result {
+//                            case .success(let user):
+//                                print("✅ User Saved! \(user)")
+//
+//                                // Switch to the main thread for any UI update
+//
+//                            case .failure(let error):
+//                                self?.showAlert(description: error.localizedDescription)
+//                            }
+//                        }
+                    //}
+            
                 case .failure(let error):
                     self?.showAlert(description: error.localizedDescription)
                 }

@@ -59,6 +59,33 @@
             </objects>
             <point key="canvasLocation" x="2503" y="814"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Chj-DX-mtR">
+            <objects>
+                <navigationController id="HPx-Pf-8wp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="person.circle" catalog="system" id="2Xa-5k-ttr"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="een-99-Ixn">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="5cO-uY-0uw" kind="relationship" relationship="rootViewController" id="7fI-cy-fwh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p6J-nY-1fS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3338" y="55"/>
+        </scene>
+        <!--PersonalFeed-->
+        <scene sceneID="PMz-09-MUt">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PersonalFeed" id="5cO-uY-0uw" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="dSp-z5-Pil"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kQe-cg-pXk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4348" y="149"/>
+        </scene>
         <!--Post-->
         <scene sceneID="gnp-6k-0bH">
             <objects>
@@ -238,6 +265,7 @@
                         <segue destination="7yr-4i-2GO" kind="relationship" relationship="viewControllers" id="uAA-kH-rMf"/>
                         <segue destination="Fcc-DS-uBJ" kind="relationship" relationship="viewControllers" id="Xmh-DP-dqb"/>
                         <segue destination="Raa-IO-Jxa" kind="relationship" relationship="viewControllers" id="5b6-eR-O8f"/>
+                        <segue destination="HPx-Pf-8wp" kind="relationship" relationship="viewControllers" id="In4-Kd-U6i"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ddc-zZ-kgB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -249,6 +277,7 @@
         <image name="homekit" catalog="system" width="128" height="104"/>
         <image name="person.3.fill" catalog="system" width="128" height="61"/>
         <image name="person.badge.plus" catalog="system" width="128" height="125"/>
+        <image name="person.circle" catalog="system" width="128" height="123"/>
         <image name="person.fill.badge.plus" catalog="system" width="128" height="125"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="linkColor">

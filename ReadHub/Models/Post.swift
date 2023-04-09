@@ -25,4 +25,5 @@ struct Post: ParseObject {
     var pages: String?
     var title: String?
     var user: User?
+    var userObjId: String?
     }
