@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		287EFBCB29CF712C0006989A /* Following.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 287EFBCA29CF712C0006989A /* Following.storyboard */; };
 		287EFBCD29CF7B230006989A /* FollowingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287EFBCC29CF7B230006989A /* FollowingViewController.swift */; };
+		D31C11A229D4F5AB00CD2AEF /* ViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31C11A129D4F5AB00CD2AEF /* ViewController+Extensions.swift */; };
+		D31C11A429D4F8C000CD2AEF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31C11A329D4F8C000CD2AEF /* LoginViewController.swift */; };
+		D31C1C0C29DB8A9D004D3CE4 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31C1C0B29DB8A9D004D3CE4 /* PostCell.swift */; };
+		D31C1C0E29DB8C0B004D3CE4 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31C1C0D29DB8C0B004D3CE4 /* Post.swift */; };
+		D37D109729DB848F0049C87D /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37D109629DB848F0049C87D /* FeedViewController.swift */; };
 		D3A3EFEC29D254FA00BD2026 /* FollowingList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3A3EFEB29D254FA00BD2026 /* FollowingList.storyboard */; };
 		D3C2364729CBB30600AE6AA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C2364629CBB30600AE6AA2 /* AppDelegate.swift */; };
 		D3C2364929CBB30600AE6AA2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C2364829CBB30600AE6AA2 /* SceneDelegate.swift */; };
@@ -17,6 +22,9 @@
 		D3C2365029CBB30700AE6AA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3C2364F29CBB30700AE6AA2 /* Assets.xcassets */; };
 		D3C2365329CBB30700AE6AA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3C2365129CBB30700AE6AA2 /* LaunchScreen.storyboard */; };
 		D3C2366129CBBB3200AE6AA2 /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3C2366029CBBB3200AE6AA2 /* Signup.storyboard */; };
+		D3C646EC29D4EE5B00A02A78 /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D3C646EB29D4EE5B00A02A78 /* ParseSwift */; };
+		D3C646EE29D4EF9900A02A78 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C646ED29D4EF9900A02A78 /* UserModel.swift */; };
+		D3C646F129D4F0E700A02A78 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C646F029D4F0E700A02A78 /* SignUpViewController.swift */; };
 		D3E09CC529CF3F780097B04A /* MainViewStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3E09CC429CF3F780097B04A /* MainViewStoryboard.storyboard */; };
 		D3E09CC729CF449B0097B04A /* Post.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3E09CC629CF449B0097B04A /* Post.storyboard */; };
 		F9D16F6929CF853F0005770C /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D16F6829CF853F0005770C /* PostViewController.swift */; };
@@ -25,6 +33,11 @@
 /* Begin PBXFileReference section */
 		287EFBCA29CF712C0006989A /* Following.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Following.storyboard; sourceTree = "<group>"; };
 		287EFBCC29CF7B230006989A /* FollowingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingViewController.swift; sourceTree = "<group>"; };
+		D31C11A129D4F5AB00CD2AEF /* ViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Extensions.swift"; sourceTree = "<group>"; };
+		D31C11A329D4F8C000CD2AEF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D31C1C0B29DB8A9D004D3CE4 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		D31C1C0D29DB8C0B004D3CE4 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		D37D109629DB848F0049C87D /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		D3A3EFEB29D254FA00BD2026 /* FollowingList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FollowingList.storyboard; sourceTree = "<group>"; };
 		D3C2364329CBB30600AE6AA2 /* ReadHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3C2364629CBB30600AE6AA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +48,8 @@
 		D3C2365229CBB30700AE6AA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3C2365429CBB30700AE6AA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3C2366029CBBB3200AE6AA2 /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
+		D3C646ED29D4EF9900A02A78 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		D3C646F029D4F0E700A02A78 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		D3E09CC429CF3F780097B04A /* MainViewStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainViewStoryboard.storyboard; sourceTree = "<group>"; };
 		D3E09CC629CF449B0097B04A /* Post.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Post.storyboard; sourceTree = "<group>"; };
 		F9D16F6829CF853F0005770C /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
@@ -45,12 +60,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3C646EC29D4EE5B00A02A78 /* ParseSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D31C11A029D4F59300CD2AEF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D31C11A129D4F5AB00CD2AEF /* ViewController+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		D3C2363A29CBB30600AE6AA2 = {
 			isa = PBXGroup;
 			children = (
@@ -83,9 +107,24 @@
 				287EFBCA29CF712C0006989A /* Following.storyboard */,
 				287EFBCC29CF7B230006989A /* FollowingViewController.swift */,
 				F9D16F6829CF853F0005770C /* PostViewController.swift */,
+				D31C11A029D4F59300CD2AEF /* Extensions */,
+				D3C646F029D4F0E700A02A78 /* SignUpViewController.swift */,
+				D31C11A329D4F8C000CD2AEF /* LoginViewController.swift */,
+				D3C646EF29D4EFA100A02A78 /* Models */,
 				D3A3EFEB29D254FA00BD2026 /* FollowingList.storyboard */,
+				D37D109629DB848F0049C87D /* FeedViewController.swift */,
+				D31C1C0B29DB8A9D004D3CE4 /* PostCell.swift */,
 			);
 			path = ReadHub;
+			sourceTree = "<group>";
+		};
+		D3C646EF29D4EFA100A02A78 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D31C1C0D29DB8C0B004D3CE4 /* Post.swift */,
+				D3C646ED29D4EF9900A02A78 /* UserModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,6 +143,9 @@
 			dependencies = (
 			);
 			name = ReadHub;
+			packageProductDependencies = (
+				D3C646EB29D4EE5B00A02A78 /* ParseSwift */,
+			);
 			productName = ReadHub;
 			productReference = D3C2364329CBB30600AE6AA2 /* ReadHub.app */;
 			productType = "com.apple.product-type.application";
@@ -132,6 +174,9 @@
 				Base,
 			);
 			mainGroup = D3C2363A29CBB30600AE6AA2;
+			packageReferences = (
+				D3C646EA29D4EE5B00A02A78 /* XCRemoteSwiftPackageReference "Parse-Swift" */,
+			);
 			productRefGroup = D3C2364429CBB30600AE6AA2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -164,10 +209,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D31C11A429D4F8C000CD2AEF /* LoginViewController.swift in Sources */,
 				287EFBCD29CF7B230006989A /* FollowingViewController.swift in Sources */,
+				D37D109729DB848F0049C87D /* FeedViewController.swift in Sources */,
+				D31C1C0E29DB8C0B004D3CE4 /* Post.swift in Sources */,
+				D3C646F129D4F0E700A02A78 /* SignUpViewController.swift in Sources */,
 				D3C2364B29CBB30600AE6AA2 /* ViewController.swift in Sources */,
 				D3C2364729CBB30600AE6AA2 /* AppDelegate.swift in Sources */,
+				D31C11A229D4F5AB00CD2AEF /* ViewController+Extensions.swift in Sources */,
 				D3C2364929CBB30600AE6AA2 /* SceneDelegate.swift in Sources */,
+				D31C1C0C29DB8A9D004D3CE4 /* PostCell.swift in Sources */,
+				D3C646EE29D4EF9900A02A78 /* UserModel.swift in Sources */,
 				F9D16F6929CF853F0005770C /* PostViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,6 +438,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D3C646EA29D4EE5B00A02A78 /* XCRemoteSwiftPackageReference "Parse-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/parse-community/Parse-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D3C646EB29D4EE5B00A02A78 /* ParseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3C646EA29D4EE5B00A02A78 /* XCRemoteSwiftPackageReference "Parse-Swift" */;
+			productName = ParseSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D3C2363B29CBB30600AE6AA2 /* Project object */;
 }
