@@ -56,25 +56,63 @@ class FollowingListViewController: UIViewController {
         // Get the date for yesterday. Adding (-1) day is equivalent to subtracting a day.
         // NOTE: `Date()` is the date and time of "right now".
 
-        let query = Post.query("userObjId" == User.current?.objectId)
-            .include("user")
-            .order([.descending("createdAt")])
-            .limit(20) // <- Limit max number of returned posts to 10
-
-        // Find and return posts that meet query criteria (async)
-        query.find { [weak self] result in
-            switch result {
-            case .success(let posts):
-                // Update the local posts property with fetched posts
-                self?.posts = posts
-            case .failure(let error):
-                self?.showAlert(description: error.localizedDescription)
+//        let query = Post.query("userObjId" == User.current?.objectId)
+//            .include("user")
+//            .order([.descending("createdAt")])
+//            .limit(20) // <- Limit max number of returned posts to 10
+//
+//        // Find and return posts that meet query criteria (async)
+//        query.find { [weak self] result in
+//            switch result {
+//            case .success(let posts):
+//                // Update the local posts property with fetched posts
+//                self?.posts = posts
+//            case .failure(let error):
+//                self?.showAlert(description: error.localizedDescription)
+//            }
+//
+//            // Call the completion handler (regardless of error or success, this will signal the query finished)
+//            // This is used to tell the pull-to-refresh control to stop refresshing
+//            completion?()
+//        }
+        guard let followingIds = User.current?.followingIds else {
+                print("No followingIds found")
+                completion?()
+                return
             }
+        let group = DispatchGroup()
+           var fetchedPosts: [Post] = []
 
-            // Call the completion handler (regardless of error or success, this will signal the query finished)
-            // This is used to tell the pull-to-refresh control to stop refresshing
-            completion?()
-        }
+           for id in followingIds {
+               group.enter()
+
+               let query = Post.query("userObjId" == id)
+                   .include("user")
+                   .order([.descending("createdAt")])
+                   .limit(20)
+
+               query.find { [weak self] result in
+                   switch result {
+                   case .success(let posts):
+                       fetchedPosts.append(contentsOf: posts)
+                   case .failure(let error):
+                       self?.showAlert(description: error.localizedDescription)
+                   }
+
+                   group.leave()
+               }
+           }
+
+           group.notify(queue: .main) { [weak self] in
+               // Sort combined posts by descending "createdAt"
+               fetchedPosts.sort(by: { $0.createdAt! > $1.createdAt! })
+
+               // Limit the number of posts (optional)
+               self?.posts = fetchedPosts.prefix(20).map { $0 }
+
+               // Call the completion handler
+               completion?()
+           }
     }
 
     @objc private func onPullToRefresh() {
