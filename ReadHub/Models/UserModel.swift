@@ -22,10 +22,14 @@ struct User: ParseUser {
     var emailVerified: Bool?
     var password: String?
     var authData: [String: [String: String]?]?
-    var following: [String]?
+    var followingIds: [String]? //Stores users object ids
 
     // Your custom properties.
     // var customKey: String?
+    var following: [String]? {
+            get { return followingIds }
+            set { followingIds = newValue }
+        }
 }
 
 
