@@ -71,6 +71,7 @@ class FollowingViewController: UIViewController {
                         print("username or password is nil!")
                         return
                     } else {
+                        
                         var user = User(objectId: User.current?.objectId)
                         var followArr = currUser?.followingIds ?? []
                         followArr.append((self?.ObjectIDUser)!)
@@ -81,11 +82,21 @@ class FollowingViewController: UIViewController {
                             case .success:
                                 print("hello!!")
                                 print(self?.ObjectIDUser)
+                        
                                 
                             case .failure(let error):
                                 self?.showAlert(description: error.localizedDescription)
                             }
                         }
+                        let alertController = UIAlertController(title: "Congratulations", message: "Follow Accepted", preferredStyle: .alert)
+                        let OKAction = UIAlertAction(title: "OK", style: .default) {
+                            (action: UIAlertAction!) in
+                            print("OK button tapped")
+                        }
+                        alertController.addAction(OKAction)
+                        self?.present(alertController, animated: true, completion: nil)
+                        print("Follow accepted")
+                        
                     }
                         
                 }
